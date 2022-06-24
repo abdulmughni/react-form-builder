@@ -1,0 +1,526 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.form-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.anticon-plus {
+  cursor: pointer;
+}
+
+.form-list-section {
+  background-color: #f6f6f6;
+  padding: 20px 18px;
+  padding-bottom: 90px;
+}
+
+/* .ant-layout-sider {
+  width: 300px !important;
+  max-width: 300px !important;
+} */
+
+.forms-list div {
+  padding-left: 50px;
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.m-80 {
+  margin: 80px 0;
+}
+
+.forms-list div:hover, .forms-list .active {
+  background-color: white;
+  cursor: pointer;
+}
+.drag-drop-section {
+  background-color: #047afe;
+  padding: 23px;
+}
+
+.drag-drop-section h2 {
+  padding-bottom: 18px;
+  color: white;
+  margin: 0px !important;
+}
+
+.drag-drop-table {
+  display: flex;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 17px;
+    border-style: dashed;
+    max-width: 237px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.drag-drop-table .anticon-drag {
+  margin-right: 30px;
+  font-size: 22px;
+}
+
+.form-component-section h2 {
+  color: white;
+}
+
+.drag-drop-input {
+  display: flex;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 0px;
+    border-style: dashed;
+    max-width: 237px;
+    border-radius: 30px;
+    margin-bottom: 22px;
+    cursor: pointer;
+
+}
+
+.drag-drop-checkbox {
+  display: flex;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 0px;
+    border-style: dashed;
+    max-width: 237px;
+    border-radius: 30px;
+    margin-bottom: 22px;
+    cursor: pointer;
+
+}
+
+.drag-drop-file {
+  display: flex;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 0px;
+    border-style: dashed;
+    max-width: 237px;
+    border-radius: 30px;
+    margin-bottom: 22px;
+    cursor: pointer;
+
+}
+
+.drag-drop-text {
+  display: flex;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 0px;
+    border-style: dashed;
+    max-width: 237px;
+    border-radius: 30px;
+    margin-bottom: 22px;
+    cursor: pointer;
+
+}
+
+.drag-drop-divider {
+  display: flex;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 0px;
+    border-style: dashed;
+    max-width: 237px;
+    border-radius: 30px;
+    margin-bottom: 22px;
+    cursor: pointer;
+
+}
+
+.header-section h2 {
+  text-align: center;
+  margin: 0;
+  padding: 24px 0;
+  color: #dadada;
+}
+
+.form-section {
+  padding: 25px 100px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.form-section:hover {
+  background-color: #f7f7f7;
+}
+
+.ant-layout-header {
+  background: none;
+}
+
+.form-section h2 {
+  font-weight: 700;
+}
+
+.form-button-icons {
+  background-color: #f6f6f6;
+  float: right;
+  border: 1px solid #e1e1e1;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  padding: 0px 5px;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  z-index: 1;
+}
+
+.empty-box {
+  padding: 100px;
+}
+
+.empty-box .ant-empty-image {
+  height: auto;
+}
+
+.empty-box .ant-empty-image svg {
+  width: 300px;
+}
+
+.min-height {
+  min-height: 100vh;
+}
+
+.required-star {
+  color: red;
+}
+
+.form-button-icons .anticon-drag {
+  font-size: 18px;
+  color: #000;
+  opacity: 0.5;
+}
+
+.form-button-icons .anticon-drag:hover {
+  opacity: 1.0;
+}
+
+.form-button-icons .anticon-folder-add {
+  font-size: 18px;
+  opacity: 0.5;
+  color: #000;
+}
+
+.form-button-icons .anticon-folder-add:hover {
+  opacity: 1.0;
+}
+
+.form-button-icons .anticon-edit {
+  font-size: 18px;
+  opacity: 0.5;
+  color: #000;
+}
+
+.form-button-icons .anticon-edit:hover {
+  opacity: 1.0;
+}
+
+.form-button-icons .anticon-delete {
+  font-size: 18px;
+  opacity: 0.5;
+  color: #000;
+}
+
+.form-button-icons .anticon-delete:hover {
+  opacity: 1.0;
+}
+
+.ant-layout-sider-children {
+  background-color: #047afe;
+}
+
+.form-button-icons .ant-btn {
+  padding: 4px 4px;
+  display: flex;
+}
+
+.text-input-button-icons {
+  background-color: #f6f6f6;
+  float: right;
+  border: 1px solid #e1e1e1;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  padding: 0px 5px;
+  position: absolute;
+  top: 46px;
+  right: 100px;
+  z-index: 10000;
+}
+
+.text-input-button-icons .ant-btn {
+  padding: 4px 4px;
+  display: flex;
+}
+
+.text-input-button-icons .anticon-drag {
+  font-size: 18px;
+  color: #000;
+  opacity: 0.5;
+}
+
+.text-input-button-icons .anticon-drag:hover {
+  opacity: 1.0;
+}
+
+.text-input-button-icons .anticon-folder-add {
+  font-size: 18px;
+  opacity: 0.5;
+  color: #000;
+}
+
+.text-input-button-icons .anticon-folder-add:hover {
+  opacity: 1.0;
+}
+
+.text-input-button-icons .anticon-edit {
+  font-size: 18px;
+  opacity: 0.5;
+  color: #000;
+}
+
+.text-input-button-icons .anticon-edit:hover {
+  opacity: 1.0;
+}
+
+.text-input-button-icons .anticon-delete {
+  font-size: 18px;
+  opacity: 0.5;
+  color: #000;
+}
+
+.text-input-button-icons .anticon-delete:hover {
+  opacity: 1.0;
+}
+
+.text-input-section .textarea.ant-input {
+  background: transparent;
+}
+
+ textarea.ant-input {
+  background: transparent;
+}
+
+.input-button-icons {
+  background-color: #f6f6f6;
+  float: right;
+  border: 1px solid #e1e1e1;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  padding: 0px 5px;
+  position: absolute;
+  top: 47px;
+  right: 100px;
+  z-index: 10000;
+}
+
+.input-button-icons .ant-btn {
+  padding: 4px 4px;
+  display: flex;
+}
+
+.input-button-icons .anticon-drag {
+  font-size: 18px;
+  opacity: 0.5;
+  color: #000;
+}
+
+.input-button-icons .anticon-drag:hover {
+ opacity: 1.0;
+}
+
+.input-button-icons .anticon-folder-add {
+  font-size: 18px;
+  opacity: 0.5;
+  color: #000;
+}
+
+.input-button-icons .anticon-folder-add:hover {
+  opacity: 1.0;
+ }
+
+.input-button-icons .anticon-edit {
+  font-size: 18px;
+  opacity: 0.5;
+  color: #000;
+}
+
+.input-button-icons .anticon-edit:hover {
+  opacity: 1.0;
+ }
+
+.input-button-icons .anticon-delete {
+  font-size: 18px;
+  opacity: 0.5;
+  color: #000;
+}
+
+.input-button-icons .anticon-delete:hover {
+  opacity: 1.0;
+ }
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.input-numbers {
+  display: flex;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.backround-white {
+  background-color: #f6f6f6;
+}
+
+.input-numbers .ant-input-number {
+  margin: 0 10px;
+  width: 50px;
+}
+
+.edit-input h3 {
+  font-weight: 600;
+}
+
+.edit-input {
+  width: 46%;
+}
+
+.edit-input .ant-input  {
+  padding: 7px;
+}
+
+.for-inline-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.drop-here {
+  border: 1px solid gainsboro;
+  padding: 100px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-here h2 {
+  color: gainsboro;
+  text-align: center;
+}
+
+.File-uploader-section .form-section .ant-btn-default {
+  border-radius: 17px;
+    border-style: dashed;
+    border-color: #959595;
+    background: transparent;
+}
+
+.validate-button button {
+  padding: 18px 52px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    border-color: #047afe;
+    color: #047afe;
+}
+
+.save-button button {
+  padding: 18px 63px;
+  display: flex;
+  align-items: center
+}
+
+.BottomButtons-section {
+  display: flex;
+  justify-content: center;
+}
+  
+
+.font-bold {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ant-input {
+  background: transparent;
+}
+
+.ant-checkbox-inner {
+  background: transparent;
+}
+
+.edit-form-buttons {
+  display: flex;
+    justify-content: flex-end;
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 37px;
+}
+
+.edit-input-width {
+  width: 100%;
+}
+
+.options-style {
+  margin-bottom: 24px;
+}
+
+.options-style .ant-form-item {
+  margin-bottom: 0;
+}
+
+.options-style .ant-space {
+  margin: 0 10px 10px 0;
+}
+
+.add-option-button {
+  width: auto !important;
+}
+
+.modal-list .drag-drop-table {
+  color: #000;
+  border: 1px solid black;
+}
+
+.ant-layout {
+  background: white;
+}
+
+.ant-layout-footer {
+  background: white;
+}
